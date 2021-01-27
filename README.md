@@ -39,6 +39,33 @@ Connect BME280 sensor and M5 Stick C using breadboard and jumper wires. I am joi
 ![Screenshot](Screenshots/M5StickC_I2C_BME280.png)
 
 
+## Step-3: Coding M5StickC Program Using Arduino IDE\
+Now write the code in Arduino IDE for M5 Stick C to access temperature, pressure and humidity data from the sensor and displaying the data in M5StickC LCD and to the Serial Monitor. The data output of the serial monitor must be separated by commas so that we can get access to these individual data values in processing. The code can be found in the file 'M5StickC_Sensor_Data_Output.ino'. The output in serial monitor must be in the format:
+                50.66, 27.88, 1011.25, 10.12.
+                
+The first value of 50.66 is humidity percentage, second value of 27.88 is temperature in degree Celsius, the third value of 1011.25 is atmospheric pressure in millibars and the last value of 10.12 is the altitude in meters.
+
+### Data Values Display on M5StickC LCD
+![Screenshot](Screenshots/M5StickC_LCD_Display.png)
+
+### Output Data in Arduino Serial Monitor
+![Screenshot](Screenshots/arduino_serial_monitor.png)
+
+## Step-4: Accessing Sensor Data in Processing From Arduino Serial Monitor
+The M5StickC program outputs data into the Arduino Serial Monitor. Now, it's time to access data into processing from Arduino Serial Monitor. After accessing data, we will make the interactive infographic by using these data. The processing program can be found in 'Temp_Pressure_Infograph.pde' file.
+
+### Real Time Interactive Data Visualization Dashboard
+![Screenshot](Screenshots/visualization .png)
+
+This is an interactive visualization. There are two thermometers red and blue. The red thermometer is for temperature and the blue thermometer is for atmospheric pressure. The mercury of the both thermometers raises to the significant scale according to the given real time value of temperature and pressure. The red tehrmometers scales are both in celsius and fahrenheit. Also the blue thermometers scales are in both pascas and millibars. The current real time values of temperature in fahrenheit and celcius and pressure in pascal and millibars are displayed in text also. These all values are changes in every seconds. The water drop represents the currrent humidity percentage and the two traingle like icons represent the current alitiude of the location from sea level. Time and date are displayed at the right bottom corner.
+
+### Data Logging 
+The start log bottom is for storing the values. When you click the button the data starts to log in a newly created text file until the stop log button is clicked. All the values are logged in the text file along with current date and time. The values are in the interval of one second. A screenshot of the log file is as follows:
+
+![Screenshot](Screenshots/data_logging_file.png)
+
+
+
 
 
 
