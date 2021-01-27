@@ -29,7 +29,16 @@ Connect BME280 sensor and M5 Stick C using breadboard and jumper wires. I am joi
 •	Connect ‘SCK’ pin of sensor to the ‘G26’ of the M5 Stick C.
 •	Lastly, connect ‘SDO’ of the sensor to ‘GND’ for the actual reading of values over I2C serial communication.
 
-![Screenshot](M5StickC_Multiple_Features_Using_ButtonClass.PNG)
+### M5StickC Pinout
+![Screenshot](Screenshots/M5StickC_Pin_Description.png)
+
+### BME280 Sensor Pinout
+![Screenshot](Screenshots/bme280_sensor.jpg)
+
+### M5StickC and BME280 I2C Communication
+![Screenshot](Screenshots/M5StickC_I2C_BME280.png)
+
+
 
 
 
