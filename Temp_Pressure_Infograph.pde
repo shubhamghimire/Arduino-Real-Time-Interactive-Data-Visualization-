@@ -59,8 +59,8 @@ size(900,350);
   rectY = 270;
   ellipseMode(CENTER);
   
-  a=loadImage("waterdrop.jpg");
-  b=loadImage("plt.png");
+  a=loadImage("Icons/waterdrop.jpg");
+  b=loadImage("Icons/plt.png");
  
 }
 
