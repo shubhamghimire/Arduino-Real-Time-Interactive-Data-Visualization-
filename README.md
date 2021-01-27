@@ -16,5 +16,21 @@ M5StickC with Arduino programming will be used to process the BME280 sensor data
 - Basic Arduino Programming
 - Basic Processing Programming
 
+# Implementation Steps
+
+## Step-1: Install IDEs, Libraries and Board Packages
+Install Arduino IDE and Processing IDE to the PC along with the required libraries in Arduino IDE. The required libraries are M5 Stick C and Adafruit BME280. Also install M5StickC board package in Arduino IDE.
+
+## Step-2: Wire Up the BME280 Sensor and M5StickC
+Connect BME280 sensor and M5 Stick C using breadboard and jumper wires. I am joining the sensor and M5 Stick C using I2C interface communication. Follow the following method for I2C serial communication:
+•	Connect ‘vio’ pin of sensor to the 3v3(3 volts) of M5 Stick C for the power supply.
+•	Connect ‘GND’ of sensor to the ‘GND’ of M5 Stick C.
+•	Connect ‘SDI’ pin of sensor to the ‘G0’ of the M5 Stick C.
+•	Connect ‘SCK’ pin of sensor to the ‘G26’ of the M5 Stick C.
+•	Lastly, connect ‘SDO’ of the sensor to ‘GND’ for the actual reading of values over I2C serial communication.
+
+![Screenshot](M5StickC_Multiple_Features_Using_ButtonClass.PNG)
+
+
 
 
